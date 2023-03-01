@@ -52,7 +52,7 @@ If you get an error here then do the following:
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 ```
 ```shell
-source ~/.zshrc
+source ~/.bash_profile
 ```
 
 Install stable ruby version:
