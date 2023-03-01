@@ -6,6 +6,8 @@
 
 ### Install dependencies
 
+Make sure to run each line separetely to even if it's in the same code block
+
 The following installs Xcode command-line tools which includes useful packages like git:
 
 ```shell
@@ -14,6 +16,37 @@ xcode-select --install
 
 Install Homebrew:
 
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Make sure the setup is correct:
+
+```shell
+brew doctor
+```
+
+Ruby version manager:
+
+```shell
+brew install rbenv
+rbenv init
+```
+
+If you get an error here then do the following:
+
+```shell
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Install stable ruby version:
+
+```shell
+rbenv install 3.1.2
+rbenv rehash
+rbenv global 3.1.2
+```
 
 
 ### Check your Ruby version
