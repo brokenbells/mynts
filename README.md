@@ -26,10 +26,24 @@ Make sure the setup is correct:
 brew doctor
 ```
 
+Make sure git is installed:
+
+```shell
+which git
+```
+
+If nothing appears then run this:
+
+```shell
+brew install git
+```
+
 Ruby version manager:
 
 ```shell
 brew install rbenv
+```
+```shell
 rbenv init
 ```
 
@@ -48,20 +62,23 @@ rbenv rehash
 rbenv global 3.1.2
 ```
 
-
-### Check your Ruby version
-
-```shell
-ruby -v
-```
-
-The ouput should start with something like `ruby 2.5.1`
-
-If not, install the right ruby version using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
+Get rid of documentation of future install packages (just for speed and convenience):
 
 ```shell
-rbenv install 2.5.1
+echo "gem: --no-document" >> ~/.gemrc
 ```
+
+Install Node.js and NVM:
+
+```shell
+brew install nvm
+source $(brew --prefix nvm)/nvm.sh >> ~/.zshrc
+```
+
+```shell
+nvm install node
+```
+
 
 ### Install dependencies
 
