@@ -113,3 +113,5 @@ gem install bundler -v 2.3.14
 Install PostgreSQL 15.2 by clicking here:
 
 https://sbp.enterprisedb.com/getfile.jsp?fileid=1258320
+
+Leave all the default settings and just click through. When you get to set a password set something super basic, seriously, like "password". It's a pain if you forget and there's no security risk since all the data you put in this database is just going to be for development and testing
