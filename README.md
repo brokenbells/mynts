@@ -1,12 +1,11 @@
-# Project
+# mynts project (My Neighbor's Toolshed)
 
-[project.com](https://project.com)
 
 ## Rails Environment Setup for MacOS
 
 ### Install dependencies
 
-Make sure to run each line separetely to even if it's in the same code block
+Best to run these all in sequence
 
 The following installs Xcode command-line tools which includes useful packages like git:
 
