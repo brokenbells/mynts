@@ -49,7 +49,7 @@ rbenv init
 If you get an error here then do the following:
 
 ```shell
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 ```
 ```shell
 source ~/.zshrc
@@ -79,7 +79,7 @@ Install Node.js and NVM:
 brew install nvm
 ```
 ```shell
-source $(brew --prefix nvm)/nvm.sh >> ~/.zshrc
+source $(brew --prefix nvm)/nvm.sh >> ~/.bash_profile
 ```
 
 ```shell
