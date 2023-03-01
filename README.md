@@ -51,6 +51,8 @@ If you get an error here then do the following:
 
 ```shell
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+```
+```shell
 source ~/.zshrc
 ```
 
@@ -58,7 +60,11 @@ Install stable ruby version:
 
 ```shell
 rbenv install 3.1.2
+```
+```shell
 rbenv rehash
+```
+```shell
 rbenv global 3.1.2
 ```
 
@@ -72,6 +78,8 @@ Install Node.js and NVM:
 
 ```shell
 brew install nvm
+```
+```shell
 source $(brew --prefix nvm)/nvm.sh >> ~/.zshrc
 ```
 
@@ -79,62 +87,29 @@ source $(brew --prefix nvm)/nvm.sh >> ~/.zshrc
 nvm install node
 ```
 
-
-### Install dependencies
-
-Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
+Install yarn package manager:
 
 ```shell
-bundle && yarn
+npm install --global yarn
 ```
 
-### Set environment variables
 
-Using [Figaro](https://github.com/laserlemon/figaro):
+### Setup Rails
 
-See [config/application.yml.sample](https://github.com/juliendargelos/project/blob/master/config/application.yml.sample) and contact the developer: [contact@juliendargelos.com](mailto:contact@juliendargelos.com) (sensitive data).
-
-### Initialize the database
+Current stable version:
 
 ```shell
-rails db:create db:migrate db:seed
+gem install rails -v 7.0.4
 ```
 
-### Add heroku remotes
-
-Using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli):
+Install bundler:
 
 ```shell
-heroku git:remote -a project
-heroku git:remote --remote heroku-staging -a project-staging
+gem install bundler -v 2.3.14
 ```
 
-## Serve
+### Setup Database
 
-```shell
-rails s
-```
+Install PostgreSQL 15.2 by clicking here:
 
-## Deploy
-
-### With Heroku pipeline (recommended)
-
-Push to Heroku staging remote:
-
-```shell
-git push heroku-staging
-```
-
-Go to the Heroku Dashboard and [promote the app to production](https://devcenter.heroku.com/articles/pipelines) or use Heroku CLI:
-
-```shell
-heroku pipelines:promote -a project-staging
-```
-
-### Directly to production (not recommended)
-
-Push to Heroku production remote:
-
-```shell
-git push heroku
-```
+https://sbp.enterprisedb.com/getfile.jsp?fileid=1258320
